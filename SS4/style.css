@@ -55,7 +55,46 @@ a{
     max-width: 1200px;
     margin: auto;
     display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
 }
+.img-container{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.img-container img{
+    width: 198px;
+    height: 200px;
+    padding: auto;
+    border-radius: 10px;
+}
+.card{
+    width: 200px;
+    height: 325px;
+    margin: 20px;
+    border: #000 1px solid;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.card button{
+    margin-top: 10px;
+    height: 30px;
+    width: fit-content;
+    border: #000 2px solid;
+    border-radius:10px; 
+    background-color: greenyellow;
+    font-size: medium;
+    font-weight: 600;
+}
+.card button:hover{
+    width: 200px;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+}
+
 
 
 

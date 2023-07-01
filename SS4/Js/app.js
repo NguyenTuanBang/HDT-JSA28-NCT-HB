@@ -99,7 +99,7 @@ for(let items of products.data){
     container.classList.add("container");
     let name=document.createElement("h5");
     name.classList.add("products-name");
-    name.innerText = items.name.toUpperCase;
+    name.innerText = items.name.toUpperCase();
 
     container.appendChild(name)
     
