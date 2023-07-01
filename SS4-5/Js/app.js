@@ -84,15 +84,15 @@ for(let items of products.data){
     let card= document.createElement("div");
     card.classList.add("card");
 
-    let imgContainer=document.createElement("div")
-    imgContainer.classList.add("img-container");
+    let imageContainer=document.createElement("div")
+    imageContainer.classList.add("image-container");
 
     let image=document.createElement("img");
     image.setAttribute("src", items.image);
 
     // đặt qh cha con
-    imgContainer.appendChild(image)
-    card.appendChild(imgContainer)
+    imageContainer.appendChild(image)
+    card.appendChild(imageContainer)
 
     // vị trí tên sản phẩm
     let container=document.createElement("div");
