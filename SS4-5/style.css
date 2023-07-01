@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.top-menu{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    margin-bottom: 36px;
+}
+.top-menu .page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.top-menu .page a{
+    color: #fff;
+    margin-right: 30px;
+}
+.top-menu .icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-menu .icon i{
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.line{
+    height: 36px;
+    border-right: 1px white solid;
+}
+.main-content .selector{
+    padding: 16px 0;
+    text-align: center;
+}
+.main-content .selector a{
+    font-size: 17px;
+    font-weight: 500;
+    color: #989898;
+    padding: 12px 12px;
+}
+#products{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+}
+.img-container{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.img-container img{
+    width: 248px;
+    height: 200px;
+    padding: auto;
+    border-radius: 10px;
+}
+.card{
+    width: 250px;
+    height: 325px;
+    margin: 20px;
+    border: #000 1px solid;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.card button{
+    margin-top: 10px;
+    height: 30px;
+    width: fit-content;
+    border: #000 2px solid;
+    border-radius:10px; 
+    background-color: greenyellow;
+    font-size: medium;
+    font-weight: 600;
+}
+.card button:hover{
+    width: 200px;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
