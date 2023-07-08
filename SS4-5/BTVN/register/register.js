@@ -1,12 +1,11 @@
 let register = document.getElementById("register-form")
 register.addEventListener("submit", function(event){
-    event.preventDefault(); /// nagnw reload mặc định của trình duyệt
+    event.preventDefault();
     let lowerCaseLetter = /[a-z]/g;
     let upperCaseLetter = /[A-Z]/g;
     let numbers = /[0-9]/g;
-    // in ra email và pass người dùng nhập được
     const data= {
-        email: register.email.value.trim(),   /// trim dùng để loại bỏ dấu cách thừa
+        email: register.email.value.trim(),   
         password: register.password.value.trim()
     }
     console.log(data)
@@ -25,7 +24,7 @@ register.addEventListener("submit", function(event){
         alert("Password must be contain a numbers or special characters")
     }
     else{
-        localStorage.setItem("data", JSON.stringify(data))      
+        localStorage.setItem("data", JSON.stringify(data));
+        alert("Succeed")        
     }
-
 })
