@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/pexels-johannes-plenio-1118873.jpg);
+    background-size: cover;
+    /* chống lặp ảnh khi phóng to */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    color: #fff;
+    background-image: url(https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif);
+    background-size: cover;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+.search-bar {
+    width: 50%;
+    margin: 0px auto;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+
+.search-icon {
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    color: #cacaca;
+}
+
+.search-input {
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: #fff;
+}
+
+.search-input::placeholder {
+    color: rgb(206, 206, 206);
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 80px 50px;
+}
+
+.city-name {
+    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.weather-stage {
+    font-size: 13px;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.temperature {
+    font: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+    font-size: 100px;
+}
+
+.temperature::after {
+    content: "o";
+    position: absolute;
+    font-size: 30px;
+}
+
+
+/* additional section */
+.additional-section{
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+.additional-section .row{
+    display: flex;
+    margin-bottom: 5px;
+}
+.additional-section .row .item{
+    display: flex;
+    flex-direction: column;
+    flex: 2;   /* flex shrink và flex row (co và dãn)*/
+}
+.additional-section .item .label{
+    font-weight: bold;
+}
