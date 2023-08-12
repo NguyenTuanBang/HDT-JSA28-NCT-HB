@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container .introduce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Hinh-anh-mua-Lan-Trung-Thu-dep-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 100vh;
+    border-right: 2px black solid;
+    border-radius: 20px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    color: black;
+    font-size: xx-large;
+    font-weight: 2000;
+}
+.aboutus{
+    opacity: 0.6;
+    background-color: white;
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+    border-radius: 10px;
+    height: 80vh;
+    width: 50vw;
+    padding: auto;
+    box-shadow: 10px 20px 40px gray;
+}
+.container .introduce h1{
+    text-align: center;
+    font-size: xx-large;
+}
+.container .function{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(28, 216, 216);
+    border-left: 2px black solid ;
+    padding-left: 10px ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+.container .function h2{
+    text-align: center;
+    font-size: x-large;
+    width: 80%;
+}
+.container .function .form{
+    width: 80%;
+}
+.container .function .form input{
+    width: 100%;
+    padding: 10px 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: #fff 1px solid;
+    outline: none;
+    background: transparent;
+}
+.form .selector{
+    display: flex;
+    flex-direction: column;
+}
+.form .selector a{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+}
+.form .selector a:hover{
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+.form button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+.form .selector button:hover{
+    color: aqua;
+    background-color: royalblue;
+    box-shadow: 0px 0px 50px red,
+                0px 0px 100px orangered,
+                0px 0px 200px green;
+}

@@ -7,7 +7,7 @@ const getPokemon = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            pokemonName.innerHTML = data.sys.sunrise;
+            
         })
 }
 getPokemon()
