@@ -615,3 +615,9 @@ ul li:hover {
   height: 80px;
   background-color: green;
 }
+.users-logo{
+  height: 35px;
+  border: 1px solid;
+    border-radius: 20px;
+    margin-right: 15px;
+}

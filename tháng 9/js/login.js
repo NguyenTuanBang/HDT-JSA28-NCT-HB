@@ -2,22 +2,28 @@ let login = document.getElementById("login-form")
 console.log(login)
 login.addEventListener("submit", function (event) {
     event.preventDefault();
-    let users = JSON.parse(localStorage.getItem("users"))
-    for (let i = 0; i <= users.length; i++) {
-        if (users[i].email === login.email.value.trim()) {
-            if (users[i].password === login.password.value.trim()) {
-                alert("Chào bạn")
-                location.href = "../html/sales.html"
-            } else {
-                alert("sai mật khẩu")
-            }
+    if (!localStorage.getItem("users")) {
+        alert("Email hoặc mật khẩu sai");
+      } else {
+        let users = JSON.parse(localStorage.getItem("users"));
+    
+        let email = document.getElementById("email");
+        let password = document.getElementById("password");
+    
+        let existingUser = users.find(
+          (index) =>
+            index.email === email.value.trim() &&
+            index.password === password.value.trim()
+        );
+    
+        if (existingUser) {
+          localStorage.setItem("currentUser", JSON.stringify(existingUser));
+    
+          location.href = "../html/sales.html";
+        } else {
+          alert("Email or password is incorrect");
         }
-    }
-    if (users[users.length - 1].email != login.email.value.trim()) {
-        alert("sai email")
-    }
+      }
+    });
 
 
-
-
-})
