@@ -11,8 +11,10 @@
       `;
     } else {
       document.getElementById("sale").innerHTML = /* html */ `
-        <table>
-          <tr>
+        <h2>Giỏ hàng của bạn</h2>
+      
+      <table>
+          <tr class="title">
             <th class="th2">Product</th>
             <th>Quantity</th>
             <th>Subtotal</th>
@@ -46,6 +48,13 @@
         </table>
         
       `;
+      const total=    Math.round(
+        cart.reduce((acc, product) => {
+          acc += product.price * product.quantity;
+          return acc;
+        }, 0) * 100
+      ) / 100
+      document.getElementsByClassName("prize").innerHTML= `<p>${total}</p>`
       
     }
   };

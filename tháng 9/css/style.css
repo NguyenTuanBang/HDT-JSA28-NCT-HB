@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+padding: 0;
+}
+#cart-count{
+    text-decoration: none !important;
+    font-size: small;
+    color: black;
+    margin: -55px 16px -7px 74px;
+    border: 0.5px solid;
+    border-radius: 31px;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}

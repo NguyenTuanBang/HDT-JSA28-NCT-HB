@@ -6,6 +6,7 @@ if (localStorage.getItem("currentUser")) {
 <a href="cart.html">
 <i class="fa-solid fa-cart-shopping"></i>
 </a>
+
       <img class="users-logo" src="https://api.dicebear.com/6.x/initials/svg?seed=${
         JSON.parse(localStorage.getItem("currentUser")).email
       }" />
@@ -30,6 +31,8 @@ if (localStorage.getItem("currentUser")) {
 <i class="fa-solid fa-globe"></i>
 </a>`;
 }
+
+
 const updateCartCount = () => {
     if (localStorage.getItem("cart")) {
       let cart = JSON.parse(localStorage.getItem("cart"));
