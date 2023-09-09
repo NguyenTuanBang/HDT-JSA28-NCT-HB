@@ -15,7 +15,7 @@ const addToCart = (productId) => {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
-  updateCartCount();
+  displayCart();
 };
 
 const removeFromCart = (productId) => {
@@ -34,5 +34,5 @@ const removeFromCart = (productId) => {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
-  updateCartCount();
+  displayCart();
 };

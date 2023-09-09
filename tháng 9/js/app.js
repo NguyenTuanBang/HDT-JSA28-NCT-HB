@@ -30,3 +30,4 @@ const logout = () => {
   localStorage.removeItem("cart");
   location.reload();
 };
+

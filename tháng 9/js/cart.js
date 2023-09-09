@@ -47,14 +47,14 @@
             .join("")}
         </table>
         
+        <h2>Total: $${cart.reduce(
+          (acc, product) =>
+            acc + Math.round(product.prize * product.quantity * 100) / 100,
+          0
+        )}</h2>
+        
       `;
-      const total=    Math.round(
-        cart.reduce((acc, product) => {
-          acc += product.price * product.quantity;
-          return acc;
-        }, 0) * 100
-      ) / 100
-      document.getElementsByClassName("prize").innerHTML= `<p>${total}</p>`
+     
       
     }
   };
